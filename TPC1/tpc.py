@@ -219,10 +219,6 @@ def main():
     arquivo = "myheart.csv"
     modelo = ler_arquivo(arquivo)
     
-    #imprime os registos do myheart.csv
-    #for registro in modelo:
-    #    print(registro)    
-    
 
     print("0 - Imprimir todas as tabelas")
     print("1 - Tabela da distribuição da doença por sexo")
@@ -234,49 +230,6 @@ def main():
     print_tabela(modelo, opcao)
 
 
-
-    # Calcula a distribuição da doença por sexo
-    #distribuicao_Sexo = distribuicao_doenca_por_sexo(modelo)
-
-    # Imprime os resultados
-    #print("\n")
-    #print('Proporção de pacientes com doença por sexo:')
-    #print(f"Masculino: {distribuicao_Sexo['M']} / {distribuicao_Sexo['Y']} -> {100*(distribuicao_Sexo['M']/distribuicao_Sexo['Y']):.2f}%")
-    #print(f"Feminino: {distribuicao_Sexo['F']} / {distribuicao_Sexo['X']} -> {100*(distribuicao_Sexo['F']/distribuicao_Sexo['X']):.2f}%")
-
-
-
-
-
-    # Calcula a distribuição da doença por faixa etaria
-    #distribuicao_Idade = distribuicao_doenca_por_idade(modelo)
-
-    # Imprime os resultados
-    #print("\n")
-    #print("Distribuição da doença por escalões etários:")
-    #
-    #for i in distribuicao_Idade:
-#
-    #    print("[{}-{}]: {} / {}  ->  {:.2f}%".format(i['lim_inf'], i['lim_sup'], i['total_doentes'], i['total'], i['percentagem']))
-
-
-
-
-    
-    # Calcula a distribuição da doença por níveis de colesterol
-    #distribuicao_colesterol = distribuicao_doenca_por_colesterol(modelo)
-    
-    # Imprime os resultados
-    #print("\n")
-    #print("Distribuição da doença por níveis de colesterol:")
-    #for limite, valor in distribuicao_colesterol.items():
-    #    
-    #    if valor[1] == 0:
-    #        continue
-    #    print(f"[{limite[0]}, {limite[1]}]: {valor[0]} / {valor[1]} -> {100*(valor[0]/valor[1]):.2f}%")
-
-
-    #print_tabela(modelo)
 
 
 
